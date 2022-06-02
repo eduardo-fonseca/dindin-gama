@@ -243,6 +243,24 @@ header ul li {
         width: 300px !important;
         height: fit-content !important;
     }
+
+    header {
+        padding-bottom: 25vh !important;
+    }
+
+    header ul li {
+        width: 15vw !important;
+    }
+
+    #informativo-topo .texto-2-informativo-topo {
+        width: 300px !important;
+        height: fit-content !important;
+    }
+
+    .texto-descricao-sobre-nos {
+        width: 300px !important;
+        height: fit-content !important;
+    }
 }
 
 /*
