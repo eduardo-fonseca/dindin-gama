@@ -140,6 +140,7 @@ header ul li {
 @media (max-width: 890px) {
     #banner-informativo-topo img {
         visibility: hidden;
+        width: 1vw;
     }
 }
 
@@ -236,6 +237,11 @@ header ul li {
         justify-content: left;
         width: 100%;
         padding-left: 5vw;
+    }
+
+    #informativo-topo .texto-1-informativo-topo {
+        width: 300px !important;
+        height: fit-content !important;
     }
 }
 
