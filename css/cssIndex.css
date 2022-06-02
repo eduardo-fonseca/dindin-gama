@@ -1,0 +1,575 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+header {
+    width: 100vw;
+    height: 117px;
+    background: #2E948A;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+}
+
+footer {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: #419488;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #FDFDFD;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+main {
+    width: 100%;
+}
+
+header ul li {
+    margin: auto 25px;
+    padding: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FDFDFD;
+}
+
+.menu-header {
+    width: 100%;
+    padding-top: 6vh;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: right;
+}
+
+.logo-header {
+    padding-left: 5vw;
+    padding-top: 2vh;
+}
+
+/* 
+
+    MEDIA QUERY 1920PX
+
+*/
+
+@media (min-width: 1920px) {
+    #sobre-nos .texto-titulo-sobre-nos {
+        margin-left: 13vw !important;
+    }
+
+    #mais-conteudo .mais-conteudo-titulo {
+        margin-left: 13vw !important;
+    }
+}
+
+
+/* 
+
+    MEDIA QUERY 1024PX
+
+*/
+
+@media (max-width: 1245px) {
+    #banner-informativo-topo img {
+        width: 25vw;
+    }
+}
+
+
+
+/* 
+
+    MEDIA QUERY 970PX
+
+*/
+
+@media (max-width: 970px) {
+    #informativo-cursos {
+        display: block;
+        flex-direction: column;
+    }
+
+    #sobre-nos #primeiro-sobre-nos,
+    #segundo-sobre-nos {
+        display: block;
+        flex-direction: column;
+        margin-left: 20vw;
+    }
+
+    #sobre-nos .texto-titulo-sobre-nos {
+        margin-left: 20vw !important;
+    }
+
+    
+
+    #mais-conteudo #conteudos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25vw !important;
+    }
+
+    #mais-conteudo #conteudo-1,
+    #conteudo-2 {
+        margin-bottom: 10vh;
+    }
+
+}
+
+/* 
+
+    MEDIA QUERY 890PX
+
+*/
+
+@media (max-width: 890px) {
+    #banner-informativo-topo img {
+        visibility: hidden;
+    }
+}
+
+/* 
+
+    MEDIA QUERY 750PX 
+
+*/
+
+@media (max-width: 750px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 180px;
+    }
+
+    header figure {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .menu-header {
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .menu-footer ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+}
+
+/* 
+
+    MEDIA QUERY 610PX 
+
+*/
+
+@media (max-width: 610px) {
+    #informativo-topo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner-informativo-topo img {
+        visibility: visible;
+        width: 50vw;
+        margin-top: 5vh;
+        margin-left: 3vw;
+    }
+
+    #sobre-nos .texto-titulo-sobre-nos {
+        font-size: 5vw !important;
+    }
+
+    #mais-conteudo .mais-conteudo-titulo {
+        font-size: 5vw !important;
+    }
+
+    #mais-conteudo #conteudos {
+        margin-left: 15vw !important;
+    }
+}
+
+/* 
+
+    MEDIA QUERY 575PX 
+
+*/
+
+@media (max-width: 575px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 180px;
+    }
+
+    .logo-header {
+        align-self: start;
+        padding-left: 10vw;
+    }
+
+    .menu-header {
+        justify-content: left;
+        width: 100%;
+        padding-left: 5vw;
+    }
+}
+
+/*
+
+    INFORMATIVO TOPO
+
+*/
+
+#informativo-topo {
+    display: flex;
+    margin-left: 10vw;
+    margin-top: 10vw;
+    padding-bottom: 5vh;
+    width: 100%;
+}
+
+#informativo-topo .texto-1-informativo-topo {
+    width: 488px;
+    height: 216px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 69px;
+    color: #FF4081;
+}
+
+#informativo-topo .texto-2-informativo-topo {
+    width: 430px;
+    height: 62px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 31px;
+    margin-top: 20px;
+    color: #555555;
+}
+
+#informativo-topo .button-informativo-topo {
+    width: 268px;
+    height: 51px;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 31px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 45px;
+    color: #FF4081;
+    background-color: white;
+}
+
+#banner-informativo-topo {
+    margin-left: 10vw;
+}
+
+/*
+
+    INFORMATIVO CURSOS
+
+*/
+
+#informativo-cursos {
+    width: 100%;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+#informativo-cursos .texto-1-informativo-cursos {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5vh;
+    line-height: 29px;
+    color: #FF4081;
+}
+
+#informativo-cursos .texto-2-informativo-cursos {
+    width: 293px;
+    height: 60px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 5vh;
+    line-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+}
+
+#informativo-cursos .button-informativo-cursos {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10vh;
+    width: 233px;
+    height: 51px;
+    background: #FF4081;
+    border-radius: 62px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+#informativo-cursos .img-1-informativo-cursos img {
+    width: 288px;
+    height: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#informativo-cursos .img-2-informativo-cursos img {
+    width: 238px;
+    height: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#informativo-cursos .img-3-informativo-cursos img {
+    width: 187px;
+    height: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+
+    SOBRE NOS
+
+*/
+
+#sobre-nos {
+    width: 100%;
+}
+
+#sobre-nos figure {
+    display: inline-block;
+}
+
+#sobre-nos article {
+    display: inline-block;
+}
+
+#sobre-nos .texto-titulo-sobre-nos {
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+    margin-left: 10vw;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 50px;
+    color: #009688;
+}
+
+#sobre-nos .texto-descricao-sobre-nos {
+    display: inline-block;
+    width: 363px;
+    height: 71px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+#sobre-nos .texto-pessoa-sobre-nos {
+    display: block;
+    margin-left: 10;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+#sobre-nos #primeiro-sobre-nos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre-nos #segundo-sobre-nos {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*
+
+    MAIS CONTEUDO
+
+*/
+
+#mais-conteudo {
+    background: #F7F7F7;
+    margin-top: 15vh;
+    width: 100%;
+    padding-bottom: 10vh;
+}
+
+#mais-conteudo #conteudos {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5vw;
+}
+
+#mais-conteudo article {
+    width: 319px;
+    height: 114px;
+}
+
+#mais-conteudo .mais-conteudo-titulo {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 43px;
+    color: #009688;
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+    margin-left: 10vw;
+}
+
+#mais-conteudo .titulo-conteudo {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 31px;
+    color: #009688;
+}
+
+#mais-conteudo .descricao-conteudo {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+#mais-conteudo .button-mais-conteudo {
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    width: 289px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FF4081;
+    height: 51px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    display: block;
+    background-color: white;
+    cursor: pointer;
+}
+
+/*
+
+    FOOTER
+
+*/
+
+footer .menu-footer {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+footer .menu-footer ul {
+    list-style: none;
+}
+
+footer .menu-footer ul li {
+    padding: 5px;
+}
+
+footer #buttons-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer #buttons-footer .button-quero-ser-prof {
+    margin-bottom: 2vh;
+}
+
+footer #buttons-footer .button-quero-ser-prof, .button-mais-link {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 289px;
+    height: 51px;
+    border: 2px solid #FFFFFF;
+    background-color: #419488;
+    border-radius: 62px;
+}
