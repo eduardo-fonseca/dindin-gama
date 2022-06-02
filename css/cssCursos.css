@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    background: #2E948A;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+}
+
+hr {
+    background: #E5E5E5;
+    height: 5px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+a {
+    text-decoration: none;
+    color: #FDFDFD;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: auto 25px;
+    padding: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FDFDFD;
+}
+
+footer {
+    margin-top: 5vh;
+    background-color: #419488;
+    height: fit-content;
+    padding-top: 4vh;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+
+footer #footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer #buttons-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-header {
+    width: 100%;
+    padding-top: 6vh;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: right;
+}
+
+.logo-header {
+    padding-left: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+@media only screen and (max-width: 1000px) {
+    #cursos .descricao-curso {
+        width: 300px !important;
+    }
+
+    #cursos .titulo-curso {
+        font-size: 22px !important;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    #curso {
+        flex-direction: column !important;
+    }
+
+    #cursos #header-cursos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8vh !important;
+    }
+
+    footer #footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer nav ul li {
+        display: flex;
+        padding-left: 15px;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 710px) {
+    /*
+
+        RESPONSIVIDADE HEADER
+
+    */
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        font-size: 3vw;
+    }
+
+    .menu-header {
+        justify-content: center;
+    }
+
+    .logo-header {
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+    } 
+
+}
+
+#cursos, #curso-investimento, #curso-poupando, #curso-independencia {
+    display: flex;
+    flex-direction: column;
+}
+
+#cursos .titulo-section {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 69px;
+    text-transform: capitalize;
+    color: #FF4081;
+}
+
+#cursos .descricao-section {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #555555;
+}
+
+#cursos .titulo-curso {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FF4081;
+}
+
+#cursos .descricao-curso {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    width: 45vw;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 21px;
+    color: #000000;
+}
+
+#curso #banner-curso img {
+    width: 340px;
+    height: 390px;
+    margin-right: 5vw;
+}
+
+#cursos {
+    margin-left: 6vw;
+    margin-right: auto;
+
+}
+
+#curso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#curso .button-informativo {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 233px;
+    height: 51px;
+    background: #2E948A;
+    border-radius: 62px;
+    border: none;
+}
+
+#cursos #header-cursos {
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+}
+
+footer #buttons-footer .button-quero-ser-prof, .button-mais-link {
+    width: 289px;
+    height: 51px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    background: #2E948A;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    border-radius: 62px;
+}
+
+.button-quero-ser-prof {
+    margin-bottom: 2vh;
+}
