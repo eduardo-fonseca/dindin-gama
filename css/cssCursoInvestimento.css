@@ -24,6 +24,12 @@ a {
     color: #FDFDFD;
 }
 
+video {
+    width: 340px;
+    height: 260px;
+    margin-right: 5vw;
+}
+
 header ul {
     display: flex;
     list-style: none;
@@ -42,7 +48,6 @@ header ul li {
 }
 
 footer {
-    margin-top: 5vh;
     background-color: #419488;
     height: fit-content;
     padding-top: 4vh;
@@ -75,6 +80,23 @@ footer #buttons-footer {
     flex-direction: column;
 }
 
+footer #buttons-footer .button-quero-ser-prof,
+.button-mais-link {
+    width: 289px;
+    height: 51px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    background: #2E948A;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    border-radius: 62px;
+}
+
 .menu-header {
     width: 100%;
     padding-top: 6vh;
@@ -89,29 +111,35 @@ footer #buttons-footer {
     padding-bottom: 2vh;
 }
 
-@media only screen and (max-width: 1000px) {
-    #cursos .descricao-curso {
+@media only screen and (max-width: 1080px) {
+    #sobre-o-curso {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #sobre-o-curso .descricao {
         width: 300px !important;
     }
 
-    #cursos .titulo-curso {
-        font-size: 22px !important;
+    #sobre-o-curso .titulo {
+        font-size: 35px !important;
+    }
+
+    #first-container {
+        flex-direction: column !important;
+    }
+
+    #aula {
+        flex-direction: column !important;
+    }
+
+    #aulas video {
+        padding-bottom: 4vh;
     }
 
 }
 
 @media only screen and (max-width: 800px) {
-
-    #curso {
-        flex-direction: column !important;
-    }
-
-    #cursos #header-cursos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 8vh !important;
-    }
 
     footer #footer-content {
         display: flex;
@@ -133,14 +161,13 @@ footer #buttons-footer {
 
 }
 
-
 @media only screen and (max-width: 710px) {
     /*
 
         RESPONSIVIDADE HEADER
 
     */
-
+    
     header {
         display: flex;
         flex-direction: column;
@@ -158,38 +185,65 @@ footer #buttons-footer {
     .logo-header {
         padding-left: 0 !important;
         padding-bottom: 0 !important;
-    }
+    } 
 
 }
 
-#cursos,
-#curso-investimento,
-#curso-poupando,
-#curso-independencia {
-    display: flex;
-    flex-direction: column;
+#sobre-o-curso {
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
-#cursos .titulo-section {
+#sobre-o-curso .titulo {
+    width: 340px;
+    height: fit-content;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 69px;
-    text-transform: capitalize;
+    font-size: 45px;
+    line-height: 63px;
     color: #FF4081;
+    margin-bottom: 2vh;
 }
 
-#cursos .descricao-section {
+#sobre-o-curso .descricao {
     font-family: 'Ubuntu';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
+    text-align: justify;
     line-height: 23px;
-    color: #555555;
+    color: #000000;
 }
 
-#cursos .titulo-curso {
+#first-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 8vh;
+    padding-top: 8vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+#banner-inicio img {
+    width: 360px;
+}
+
+#aulas {
+    background: #F7F7F7;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 6vh;
+}
+
+#aula {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo-aula {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
@@ -198,75 +252,22 @@ footer #buttons-footer {
     color: #FF4081;
 }
 
-#cursos .descricao-curso {
-    padding-top: 4vh;
-    padding-bottom: 4vh;
-    width: 45vw;
+.descricao-aula {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
-    text-align: justify;
-    line-height: 21px;
+    font-size: 20px;
+    line-height: 23px;
     color: #000000;
-}
-
-#curso #banner-curso img {
-    width: 340px;
-    height: 390px;
-    margin-right: 5vw;
-}
-
-#cursos {
-    padding-left: 6vw;
-    padding-right: 6vw;
-    margin-right: auto;
-
-}
-
-#curso {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#curso .button-informativo {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #FFFFFF;
-    width: 233px;
-    height: 51px;
-    background: #2E948A;
-    border-radius: 62px;
-    border: none;
-}
-
-#cursos #header-cursos {
-    margin-bottom: 4vh;
-    margin-top: 4vh;
-}
-
-footer #buttons-footer .button-quero-ser-prof,
-.button-mais-link {
-    width: 289px;
-    height: 51px;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    background: #2E948A;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    cursor: pointer;
-    border-radius: 62px;
+    text-align: justify;
+    padding-top: 4vh;
+    width: 45vw;
 }
 
 .button-quero-ser-prof {
     margin-bottom: 2vh;
+}
+
+video #last {
+    margin-bottom: 5vh;
 }
