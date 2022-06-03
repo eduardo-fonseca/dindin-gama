@@ -6,21 +6,10 @@
 
 header {
     width: 100%;
-    height: 117px;
+    height: fit-content;
     background: #2E948A;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
     display: inline-flex;
-}
-
-footer {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    background: #419488;
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-around;
-    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
-    align-items: center;
 }
 
 a {
@@ -31,10 +20,6 @@ a {
 header ul {
     display: flex;
     list-style: none;
-}
-
-main {
-    width: 100%;
 }
 
 header ul li {
@@ -49,6 +34,56 @@ header ul li {
     color: #FDFDFD;
 }
 
+footer {
+    background-color: #419488;
+    height: fit-content;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+
+footer #footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer #buttons-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer #buttons-footer .button-quero-ser-prof,
+.button-mais-link {
+    width: 289px;
+    height: 51px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    background: #2E948A;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    border-radius: 62px;
+}
+
 .menu-header {
     width: 100%;
     padding-top: 6vh;
@@ -60,377 +95,215 @@ header ul li {
 .logo-header {
     padding-left: 5vw;
     padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
-/* 
-
-    MEDIA QUERY 1920PX
-
-*/
-
-@media (min-width: 1920px) {
-    #sobre-nos .texto-titulo-sobre-nos {
-        margin-left: 13vw !important;
+@media only screen and (max-width: 1030px) {
+    #header-conteudo {
+        flex-direction: column !important;
+        align-items: center;
     }
 
-    #mais-conteudo .mais-conteudo-titulo {
-        margin-left: 13vw !important;
+    #cursos-conteudo {
+        flex-direction: column !important;
+        align-items: center;
     }
-}
 
-
-/* 
-
-    MEDIA QUERY 1024PX
-
-*/
-
-@media (max-width: 1245px) {
-    #banner-informativo-topo img {
-        width: 25vw;
+    .button-curso {
+        margin-bottom: 6vh;
+    
     }
-}
 
+    #header-conteudo-banner {
+        margin-top: 6vh;
+    }
 
-
-/* 
-
-    MEDIA QUERY 970PX
-
-*/
-
-@media (max-width: 970px) {
-    #informativo-cursos {
-        display: block;
+    #first-row, #second-row, .titulo-sobre-nos {
+        display:flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    #sobre-nos #primeiro-sobre-nos,
-    #segundo-sobre-nos {
-        display: block;
+    #conteudos {
+        display:flex;
         flex-direction: column;
-        margin-left: 20vw;
+        align-items: center;
     }
+}
 
-    #sobre-nos .texto-titulo-sobre-nos {
-        margin-left: 20vw !important;
-    }
+@media only screen and (max-width: 800px) {
 
-    #mais-conteudo .mais-conteudo-titulo {
-        margin-left: 20vw !important;
-    }
-
-    #mais-conteudo #conteudos {
+    footer #footer-content {
         display: flex;
         flex-direction: column;
-        margin-left: 25vw !important;
+        align-items: center;
     }
 
-    #mais-conteudo #conteudo-1,
-    #conteudo-2 {
-        margin-bottom: 10vh;
+    footer nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer nav ul li {
+        display: flex;
+        padding-left: 15px;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
     }
 
 }
 
-/* 
+@media only screen and (max-width: 710px) {
+    /*
 
-    MEDIA QUERY 890PX
+        RESPONSIVIDADE HEADER
 
-*/
+    */
 
-@media (max-width: 890px) {
-    #banner-informativo-topo img {
-        visibility: hidden;
-        width: 1vw;
-    }
-}
-
-/* 
-
-    MEDIA QUERY 750PX 
-
-*/
-
-@media (max-width: 750px) {
     header {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 180px;
+        align-items: center;
     }
 
-    header figure {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    header ul li {
+        font-size: 3vw;
     }
 
     .menu-header {
         justify-content: center;
-        width: 100%;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .menu-footer ul {
-        display: flex;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-    }
-}
-
-/* 
-
-    MEDIA QUERY 610PX 
-
-*/
-
-@media (max-width: 610px) {
-    #informativo-topo {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #banner-informativo-topo img {
-        visibility: visible;
-        width: 50vw;
-        margin-top: 5vh;
-        margin-left: 3vw;
-    }
-
-    #sobre-nos .texto-titulo-sobre-nos {
-        font-size: 5vw !important;
-    }
-
-    #mais-conteudo .mais-conteudo-titulo {
-        font-size: 5vw !important;
-    }
-
-    #mais-conteudo #conteudos {
-        margin-left: 15vw !important;
-    }
-}
-
-/* 
-
-    MEDIA QUERY 575PX 
-
-*/
-
-@media (max-width: 575px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 180px;
     }
 
     .logo-header {
-        align-self: start;
-        padding-left: 10vw;
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
     }
 
-    .menu-header {
-        justify-content: left;
-        width: 100%;
-        padding-left: 5vw;
+    #header-conteudo-banner img {
+        width: 340px;
     }
 
-    #informativo-topo .texto-1-informativo-topo {
-        width: 300px !important;
-        height: fit-content !important;
+    .titulo-mais-conteudo {
+        font-size: 25px !important;
     }
 
-    header {
-        padding-bottom: 25vh !important;
-    }
-
-    header ul li {
-        width: 15vw !important;
-    }
-
-    #informativo-topo .texto-2-informativo-topo {
-        width: 300px !important;
-        height: fit-content !important;
-    }
-
-    .texto-descricao-sobre-nos {
-        width: 300px !important;
-        height: fit-content !important;
+    .titulo-sobre-nos {
+        font-size: 25px !important;
     }
 }
 
-/*
+@media only screen and (max-width: 510px) {
+    #header-conteudo-texto, .descricao-header, .titulo-header {
+        width: 340px !important;
+    }
 
-    INFORMATIVO TOPO
-
-*/
-
-#informativo-topo {
-    display: flex;
-    margin-left: 10vw;
-    margin-top: 10vw;
-    padding-bottom: 5vh;
+    #pessoa {
+        flex-direction: column;
+    }
 }
 
-#informativo-topo .texto-1-informativo-topo {
-    width: 488px;
-    height: 216px;
+.button-quero-ser-prof {
+    margin-bottom: 2vh;
+}
+
+#header-conteudo-texto .titulo-header {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 69px;
+    width: 480px;
     color: #FF4081;
 }
 
-#informativo-topo .texto-2-informativo-topo {
-    width: 430px;
-    height: 62px;
+#header-conteudo-texto .descricao-header {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
     line-height: 31px;
-    margin-top: 20px;
+    width: 462px;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
     color: #555555;
 }
 
-#informativo-topo .button-informativo-topo {
-    width: 268px;
-    height: 51px;
-    border: 2px solid #FF4081;
-    border-radius: 62px;
+.button-informativo {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
+    width: 268px;
+    height: 51px;
     line-height: 31px;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 45px;
     color: #FF4081;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
     background-color: white;
 }
 
-#banner-informativo-topo {
-    margin-left: 10vw;
-}
-
-/*
-
-    INFORMATIVO CURSOS
-
-*/
-
-#informativo-cursos {
-    width: 100%;
-    background: #F7F7F7;
+#header-conteudo {
     display: flex;
-    justify-content: space-around;
-    padding-top: 15vh;
-    padding-bottom: 15vh;
+    flex-direction: row;
+    padding-top: 10vh;
+    justify-content: center;
 }
 
-#informativo-cursos .texto-1-informativo-cursos {
+#cursos-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #F7F7F7;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    margin-top: 6vh;
+}
+
+#cursos-conteudo img {
+    height: 270px;
+    width: 250px;
+}
+
+.curso-titulo {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    text-align: center;
-    padding-top: 5vh;
     line-height: 29px;
+    margin-top: 2vh;
     color: #FF4081;
 }
 
-#informativo-cursos .texto-2-informativo-cursos {
-    width: 293px;
-    height: 60px;
+.curso-descricao {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
-    text-align: center;
-    padding-top: 5vh;
+    width: 293px;
+    margin-top: 2vh;
     line-height: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: justify;
     color: #000000;
 }
 
-#informativo-cursos .button-informativo-cursos {
+.button-curso {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 10vh;
     width: 233px;
     height: 51px;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 2vh;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
     background: #FF4081;
     border-radius: 62px;
-    border: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    margin-bottom: 60px;
 }
 
-#informativo-cursos .img-1-informativo-cursos img {
-    width: 288px;
-    height: 270px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#informativo-cursos .img-2-informativo-cursos img {
-    width: 238px;
-    height: 270px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#informativo-cursos .img-3-informativo-cursos img {
-    width: 187px;
-    height: 270px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*
-
-    SOBRE NOS
-
-*/
-
-#sobre-nos {
-    width: 100%;
-}
-
-#sobre-nos figure {
-    display: inline-block;
-}
-
-#sobre-nos article {
-    display: inline-block;
-}
-
-#sobre-nos .texto-titulo-sobre-nos {
-    margin-top: 20vh;
-    margin-bottom: 15vh;
-    margin-left: 10vw;
-
+.titulo-sobre-nos {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -439,158 +312,115 @@ header ul li {
     color: #009688;
 }
 
-#sobre-nos .texto-descricao-sobre-nos {
-    display: inline-block;
-    width: 363px;
-    height: 71px;
+.descricao-pessoa {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
+    width: 363px;
     line-height: 25px;
     color: #000000;
 }
 
-#sobre-nos .texto-pessoa-sobre-nos {
-    display: block;
-    margin-left: 10;
+.nome-pessoa {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     color: #000000;
-    margin-bottom: 50px;
 }
 
-#sobre-nos #primeiro-sobre-nos {
-    display: flex;
+#first-row, #second-row {
+    display:flex;
     justify-content: space-around;
 }
 
-#sobre-nos #segundo-sobre-nos {
-    display: flex;
-    justify-content: space-around;
+#pessoa {
+    display: inline-flex;
 }
 
-/*
-
-    MAIS CONTEUDO
-
-*/
-
-#mais-conteudo {
-    background: #F7F7F7;
-    padding-top: 5vh;
-    width: 100%;
-    padding-bottom: 10vh;
+#informacoes-pessoa {
+    padding-left: 2vw;
+    padding-bottom: 4vh;
 }
 
-#mais-conteudo #conteudos {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 5vw;
+#sobre-nos #titulo {
+    display:flex;
+    justify-content: center;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
 }
 
-#mais-conteudo article {
-    width: 319px;
-    height: 114px;
+#sobre-nos {
+    padding-bottom: 8vh;
 }
 
-#mais-conteudo .mais-conteudo-titulo {
-    font-family: 'Ubuntu';
+.titulo-mais-conteudo {
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
     font-size: 37px;
     line-height: 43px;
     color: #009688;
-
-    margin-top: 20vh;
-    margin-bottom: 15vh;
-    margin-left: 10vw;
 }
 
-#mais-conteudo .titulo-conteudo {
+.titulo-conteudo {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 27px;
     line-height: 31px;
+
     color: #009688;
 }
 
-#mais-conteudo .descricao-conteudo {
+.descricao-conteudo {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
+    font-size: 20px;
+    line-height: 31px;
+
+    color: #555555;
 }
 
-#mais-conteudo .button-mais-conteudo {
-    border: 2px solid #FF4081;
-    border-radius: 62px;
-    width: 289px;
+#conteudo {
+    width: 319px;
+}
+
+#conteudos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#mais-conteudo {
+    background: #F7F7F7;
+}
+
+.titulo-mais-conteudo {
+    display: flex;
+    justify-content: center;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+#botao-conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+#mais-conteudo .button-conteudo {
     font-family: 'Ubuntu';
     font-style: normal;
+    width: 207px;
+    background-color: white;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 29px;
     color: #FF4081;
-    height: 51px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15vh;
-    display: block;
-    background-color: white;
-    cursor: pointer;
-}
-
-/*
-
-    FOOTER
-
-*/
-
-footer .menu-footer {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: #FFFFFF;
-}
-
-footer .menu-footer ul {
-    list-style: none;
-}
-
-footer .menu-footer ul li {
-    padding: 5px;
-}
-
-footer #buttons-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-footer #buttons-footer .button-quero-ser-prof {
-    margin-bottom: 2vh;
-}
-
-footer #buttons-footer .button-quero-ser-prof, .button-mais-link {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    cursor: pointer;
-    color: #FFFFFF;
-    width: 289px;
-    height: 51px;
-    border: 2px solid #FFFFFF;
-    background-color: #419488;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    border: 2px solid #FF4081;
     border-radius: 62px;
 }
