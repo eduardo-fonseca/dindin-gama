@@ -8,7 +8,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/eduardo-fonseca/dindin-gama?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/eduardo-fonseca/dindin-gama?style=for-the-badge)
 
-> Primeiro projeto Hands-ON #1 do curso da Gama-Academy! Layout desenvolvido em CSS e HTML com responsividade para variados tamanhos de tela.
+> Primeiro projeto Hands-ON #1 do curso de Desenvolvimento Full-Stack da Gama-Academy! Layout desenvolvido em CSS e HTML com responsividade para variados tamanhos de tela.
 
 ### 💻 Ajustes e melhorias
 
